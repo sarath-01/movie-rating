@@ -22,8 +22,10 @@ const Home = () => {
     // dispatch(addMovies(response.data));
     // };
     // fetchmovies();
-    dispatch(fetchAsyncMovies());
-    dispatch(fetchAsyncShows());
+    const movieText = "Harry"
+    const showText = "Friends"
+    dispatch(fetchAsyncMovies(movieText));
+    dispatch(fetchAsyncShows(showText));
   }, [dispatch]);
   return (
     <div>
